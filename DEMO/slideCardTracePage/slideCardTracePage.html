@@ -1,0 +1,207 @@
+<!--
+ * @Author: Liangbw
+ * @Date: 2022-04-08 17:54:30
+ * @LastEditors: Liangbw
+ * @LastEditTime: 2022-04-12 10:16:48
+ * @Description: 溯源页面，使用滑动卡片，参考slideCardLogin
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>溯源信息</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="slideCardTracePage.css">
+</head>
+
+<body >
+	<div class="container">
+		<!-- <div class="sy-title"><a class="sy-back" href="#home">  </a> 溯源跟踪 </div> -->
+		<div class="sy-productimg">
+			<img src="http://weixin-open.seeunsee.cn/mp/seastar/img/babysmile.gif" alt="" >
+		</div>
+		<div class="sy-productinfo" >
+			<p class="checkResult" >
+				<img src="https://ddim-development.oss-cn-hangzhou.aliyuncs.com/dande_weixin_mp/ddip/entry/dande-demo/icon-true.png" />
+					正品识别成功
+			</p>
+			<div class="productInfo" >
+				<div>
+					<span class="lable-column">商品名称：</span>
+					<span id="productName" class="content-column"></span>
+				</div>
+				<div>
+					<span class="lable-column">溯源窜码：</span>
+					<span class="content-column" id="gncode"></span>
+				</div>
+			</div>
+		</div>
+		<div class="sy-traceInfo slide-up">
+			<h2 class="checkTrace">查看溯源物流</h2>
+			<div class="swiper-container slide-up" id="tracelist">
+				<ul>
+					<li class="big-icon current-state">
+						<div>07-20<span>20:30</span></div>
+						<div><i><img src="img/arriveicon.png"></img></i></div>
+						<div class="trace-content">
+							<b>已到达</b>
+							<p>广东珠海山姆会员店</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li class="big-icon ">
+						<div>07-20<span>20:30</span></div>
+						<div><i><img src="img/transport.png"></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海商超</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li>
+						<div>07-20<span>20:30</span></div>
+						<div><i></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海批发商贸</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li>
+						<div>07-20<span>20:30</span></div>
+						<div><i></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海批发商贸</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li>
+						<div>07-20<span>20:30</span></div>
+						<div><i></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海批发商贸</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li class="big-icon">
+						<div>07-20<span>20:30</span></div>
+						<div><i><img src="img/delivery2.png"></i></div>
+						<div class="trace-content">
+							<b>已发货</b>
+							<p>产品原产地库房等待揽收</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li>
+						<div>07-20<span>20:30</span></div>
+						<div><i></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海批发商贸</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li class="big-icon">
+						<div>07-20<span>20:30</span></div>
+						<div><i><img src="img/delivery2.png"></i></div>
+						<div class="trace-content">
+							<b>已发货</b>
+							<p>产品原产地库房等待揽收</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li>
+						<div>07-20<span>20:30</span></div>
+						<div><i></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海批发商贸</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li class="big-icon">
+						<div>07-20<span>20:30</span></div>
+						<div><i><img src="img/delivery2.png"></i></div>
+						<div class="trace-content">
+							<b>已发货</b>
+							<p>产品原产地库房等待揽收</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li>
+						<div>07-20<span>20:30</span></div>
+						<div><i></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海批发商贸</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li class="big-icon">
+						<div>07-20<span>20:30</span></div>
+						<div><i><img src="img/delivery2.png"></i></div>
+						<div class="trace-content">
+							<b>已发货</b>
+							<p>产品原产地库房等待揽收</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li>
+						<div>07-20<span>20:30</span></div>
+						<div><i></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海批发商贸</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li class="big-icon">
+						<div>07-20<span>20:30</span></div>
+						<div><i><img src="img/delivery2.png"></i></div>
+						<div class="trace-content">
+							<b>已发货</b>
+							<p>产品原产地库房等待揽收</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li>
+						<div>07-20<span>20:30</span></div>
+						<div><i></i></div>
+						<div class="trace-content">
+							<b>运输中</b>
+							<p>广东珠海批发商贸</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+					<li class="big-icon">
+						<div>07-20<span>20:30</span></div>
+						<div><i><img src="img/delivery2.png"></i></div>
+						<div class="trace-content">
+							<b>已发货</b>
+							<p>产品原产地库房等待揽收</p>
+							<p>操作员:xxx</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <script src="slideCardTracePage.js"></script>
+	<script>
+		function getUrlParam(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象\
+			var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+			if (r != null) return unescape(r[2]); return null; //返回参数值
+		}
+		var productName = document.getElementById("productName");
+		productName.innerHTML="babysmile牙刷盒"
+		var traceCode = getUrlParam('gn')
+		var gncodevar = document.getElementById("gncode");
+		gncodevar.innerHTML = traceCode;
+	</script>
+</body>
+
+</html>
